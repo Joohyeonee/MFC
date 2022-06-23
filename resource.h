@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++에서 생성한 포함 파일입니다.
+// Wizard.rc에서 사용되고 있습니다.
+//
+#define IDD_TAB1                        9
+#define IDD_ABOUTBOX                    100
+#define IDR_MAINFRAME                   128
+#define IDR_WizardTYPE                  130
+#define IDD_DIALOG1                     310
+#define IDD_DIALOG2                     312
+#define IDD_DIALOG3                     320
+#define IDD_TAB2                        324
+#define IDD_DIALOG4                     326
+#define IDD_DIALOG5                     328
+#define IDC_GMS                         1003
+#define IDC_OPENGMS                     1004
+#define IDC_BRINGDATA                   1005
+#define IDC_FILEPATH                    1007
+#define IDC_TAB1                        1009
+#define IDC_COMBO1                      1011
+#define IDC_ALGORITHM                   1011
+#define IDC_DEPENDENT                   1011
+#define IDC_EDIT1                       1012
+#define IDC_DISCOU                      1012
+#define IDC_DISCOUNT_RATE               1012
+#define IDC_INDEPENDENT                 1012
+#define IDC_EDIT2                       1013
+#define IDC_LEARN_RATE                  1013
+#define IDC_ERROR                       1013
+#define IDC_EDIT3                       1014
+#define IDC_EPSILON                     1014
+#define IDC_UP_LIMIT                    1014
+#define IDC_EDIT4                       1015
+#define IDC_EPSILON_DEC                 1015
+#define IDC_DOWN_LIMIT                  1015
+#define IDC_EDIT5                       1016
+#define IDC_EPSILON_MIN                 1016
+#define IDC_AMOUNT                      1016
+#define IDC_EDIT6                       1017
+#define IDC_EPISODE                     1017
+#define IDC_EDIT7                       1018
+#define IDC_STEP                        1018
+#define IDC_EDIT8                       1019
+#define IDC_SIZE                        1019
+#define IDC_EDIT9                       1020
+#define IDC_MEMORY                      1020
+#define IDC_EDIT10                      1021
+#define IDC_START_LEARN                 1021
+#define IDC_COMBO2                      1022
+#define IDC_NORMALIZE                   1022
+#define IDC_COMBO3                      1023
+#define IDC_COMBO4                      1024
+#define IDC_ACTIVE                      1025
+#define IDC_LAYER1_NODE                 1026
+#define IDC_LAYER1_FUNCTION             1027
+#define IDC_STATIC_N1                   1028
+#define IDC_STATIC_F1                   1029
+#define IDC_LAYER2_NODE                 1030
+#define IDC_LAYER2_FUNCTION             1031
+#define IDC_STATIC_N2                   1032
+#define IDC_STATIC_F2                   1033
+#define IDC_LAYER3_NODE                 1034
+#define IDC_LAYER3_FUNCTION             1035
+#define IDC_STATIC_N3                   1036
+#define IDC_STATIC_F3                   1037
+#define IDC_LAYER4_NODE                 1038
+#define IDC_LAYER4_FUNCTION             1039
+#define IDC_STATIC_N4                   1040
+#define IDC_STATIC_F4                   1041
+#define IDC_LAYER5_NODE                 1042
+#define IDC_LAYER5_FUNCTION             1043
+#define IDC_STATIC_N5                   1044
+#define IDC_STATIC_F5                   1045
+#define IDC_LAYER6_NODE                 1046
+#define IDC_LAYER6_FUNCTION             1047
+#define IDC_STATIC_N6                   1048
+#define IDC_STATIC_F6                   1049
+#define IDC_LAYER7_NODE                 1050
+#define IDC_LAYER7_FUNCTION             1051
+#define IDC_STATIC_N7                   1052
+#define IDC_STATIC_F7                   1053
+#define IDC_LAYER8_NODE                 1054
+#define IDC_LAYER8_FUNCTION             1055
+#define IDC_STATIC_N8                   1056
+#define IDC_STATIC_F8                   1057
+#define IDC_LAYER9_NODE                 1058
+#define IDC_LAYER9_FUNCTION             1059
+#define IDC_STATIC_FF8                  1060
+#define IDC_STATIC_N9                   1060
+#define IDC_STATIC_F9                   1061
+#define IDC_LAYER10_NODE                1062
+#define IDC_LAYER10_FUNCTION            1063
+#define IDC_STATIC_N10                  1064
+#define IDC_STATIC_F10                  1065
+#define IDC_BUTTON1                     1065
+#define IDC_N_LAYER                     1066
+#define IDC_UPLIMINT                    1066
+#define IDC_DOWNLIMIT                   1067
+#define IDC_CONTROL                     1068
+#define IDC_STATIC1                     1069
+#define IDC_STATIC2                     1070
+#define IDC_STATIC3                     1071
+#define IDC_STATIC4                     1072
+#define IDC_STATIC5                     1073
+#define IDC_STATIC9                     1074
+#define IDC_STATIC7                     1075
+#define IDC_STATIC8                     1076
+#define ID_WIZARD                       32771
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        330
+#define _APS_NEXT_COMMAND_VALUE         32772
+#define _APS_NEXT_CONTROL_VALUE         1078
+#define _APS_NEXT_SYMED_VALUE           310
+#endif
+#endif

@@ -1,0 +1,617 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#include ""res\\Wizard.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Wizard.ico"
+IDR_WizardTYPE          ICON                    "res\\WizardDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기(&N)\tCtrl+N",          ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "저장(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",           ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "최근에 사용한 파일",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                     ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소(&U)\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "확장기능"
+    BEGIN
+        MENUITEM "강화학습",                        ID_WIZARD
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "Wizard 정보(&A)...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wizard 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "Wizard, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2021",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "강화학습"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Data Mining 모델",IDC_STATIC,39,73,55,8
+    EDITTEXT        IDC_GMS,101,70,117,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "F",IDC_OPENGMS,219,70,19,14
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "강화학습"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "데이터 불러오기",IDC_BRINGDATA,26,26,60,14
+    LTEXT           "",IDC_FILEPATH,126,28,166,8
+    LTEXT           "파일 위치: ",IDC_STATIC,88,29,37,8
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "강화학습"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,0,295,162
+END
+
+IDD_TAB1 DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "알고리즘 선택",IDC_STATIC,23,20,47,8
+    LTEXT           "할인율",IDC_STATIC,23,38,23,8
+    LTEXT           "학습률",IDC_STATIC,23,56,23,8
+    LTEXT           "Epsilon",IDC_STATIC,24,73,23,8
+    LTEXT           "Epsilon 감쇠율",IDC_STATIC,23,91,47,8
+    LTEXT           "Epsilon 최솟값",IDC_STATIC,24,110,47,8
+    LTEXT           "최대 에피소드",IDC_STATIC,23,130,47,8
+    LTEXT           "최대 스텝",IDC_STATIC,23,148,32,8
+    LTEXT           "배치정규화 여부",IDC_STATIC,158,20,54,8
+    LTEXT           "배치크기",IDC_STATIC,157,38,30,8
+    LTEXT           "리플레이 메모리 크기",IDC_STATIC,157,56,71,8
+    LTEXT           "최소 학습 시작 크기",IDC_STATIC,158,74,66,8
+    COMBOBOX        IDC_ALGORITHM,79,17,61,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LEARN_RATE,79,52,61,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EPSILON,80,70,61,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EPSILON_DEC,80,88,61,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EPSILON_MIN,80,106,61,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EPISODE,80,125,61,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STEP,80,144,62,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SIZE,235,34,58,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MEMORY,235,53,58,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_START_LEARN,235,72,57,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_NORMALIZE,235,16,58,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DISCOUNT_RATE,79,34,61,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_TAB2 DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "출력층 활성화 함수",IDC_STATIC,11,14,64,8
+    LTEXT           "은닉층 #1 노드 개수",IDC_STATIC_N1,10,28,68,8
+    LTEXT           "은닉층 #1 활성화 함수",IDC_STATIC_F1,10,42,75,8
+    LTEXT           "은닉층 #2 노드 개수",IDC_STATIC_N2,10,57,68,8
+    LTEXT           "은닉층 #2 활성화 함수",IDC_STATIC_F2,10,72,75,8
+    LTEXT           "은닉층 개수",IDC_STATIC,163,13,40,8
+    COMBOBOX        IDC_ACTIVE,84,11,79,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LAYER1_FUNCTION,85,40,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LAYER1_NODE,85,26,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LAYER2_NODE,85,55,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_N_LAYER,223,10,74,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LAYER2_FUNCTION,85,69,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "은닉층 #3 노드 개수",IDC_STATIC_N3,11,87,68,8
+    LTEXT           "은닉층 #3 활성화 함수",IDC_STATIC_F3,10,102,75,8
+    EDITTEXT        IDC_LAYER3_NODE,85,84,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER3_FUNCTION,85,99,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "은닉층 #4 노드 개수",IDC_STATIC_N4,9,116,68,8
+    LTEXT           "은닉층 #4 활성화 함수",IDC_STATIC_F4,10,130,75,8
+    EDITTEXT        IDC_LAYER4_NODE,85,114,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER4_FUNCTION,85,128,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "은닉층 #5 노드 개수",IDC_STATIC_N5,9,144,68,8
+    LTEXT           "은닉층 #5 활성화 함수",IDC_STATIC_F5,9,159,75,8
+    EDITTEXT        IDC_LAYER5_NODE,85,143,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER5_FUNCTION,85,157,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "은닉층 #6 노드 개수",IDC_STATIC_N6,162,27,68,8
+    LTEXT           "은닉층 #6 활성화 함수",IDC_STATIC_F6,161,42,75,8
+    EDITTEXT        IDC_LAYER6_NODE,235,25,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER6_FUNCTION,238,39,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "은닉층 #7 노드 개수",IDC_STATIC_N7,161,56,68,8
+    LTEXT           "은닉층 #7 활성화 함수",IDC_STATIC_F7,161,70,75,8
+    EDITTEXT        IDC_LAYER7_NODE,240,54,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER7_FUNCTION,239,68,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "은닉층 #8 노드 개수",IDC_STATIC_N8,162,84,68,8
+    LTEXT           "은닉층 #8 활성화 함수",IDC_STATIC_F8,161,99,75,8
+    EDITTEXT        IDC_LAYER8_NODE,240,83,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER8_FUNCTION,240,97,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "은닉층 #9 노드 개수",IDC_STATIC_N9,161,115,68,8
+    LTEXT           "은닉층 #9 활성화 함수",IDC_STATIC_F9,161,129,75,8
+    EDITTEXT        IDC_LAYER9_NODE,240,112,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER9_FUNCTION,240,126,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "은닉층 #10 노드 개수",IDC_STATIC_N10,161,144,72,8
+    LTEXT           "은닉층 #10 활성화 함수",IDC_STATIC_F10,161,159,79,8
+    EDITTEXT        IDC_LAYER10_NODE,239,141,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER10_FUNCTION,240,156,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "강화학습"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_DEPENDENT,97,39,89,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_INDEPENDENT,97,55,89,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ERROR,97,71,89,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_UP_LIMIT,97,87,89,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DOWN_LIMIT,97,103,89,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_AMOUNT,97,119,89,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "종속변수 선택",IDC_STATIC,29,41,47,8
+    LTEXT           "제어변수 선택",IDC_STATIC,30,57,47,8
+    LTEXT           "목표치 허용오차",IDC_STATIC,29,73,54,8
+    LTEXT           "종속변수 관리상한",IDC_UPLIMINT,29,89,62,8
+    LTEXT           "종속변수 관리하한",IDC_DOWNLIMIT,29,105,62,8
+    LTEXT           "제어량",IDC_CONTROL,29,121,23,8
+    PUSHBUTTON      "변수 정의",IDC_BUTTON1,27,24,44,11
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "강화학습"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "사용자가 설정한 옵션은 다음과 같습니다.",IDC_STATIC,39,18,140,8
+    LTEXT           "학습 환경:",IDC_STATIC,39,36,54,8
+    LTEXT           "학습 알고리즘:",IDC_STATIC,39,52,54,8
+    LTEXT           "최대 Episode",IDC_STATIC,39,68,54,8
+    LTEXT           "학습률:",IDC_STATIC,39,100,54,8
+    LTEXT           "할인율:",IDC_STATIC,39,116,54,8
+    LTEXT           "예측 모델 환경",IDC_STATIC1,110,36,57,8
+    LTEXT           "2",IDC_STATIC2,110,52,57,8
+    LTEXT           "3",IDC_STATIC3,110,68,57,8
+    LTEXT           "4",IDC_STATIC4,110,100,57,8
+    LTEXT           "5",IDC_STATIC5,110,116,57,8
+    LTEXT           "제어변수:",IDC_STATIC,39,132,54,8
+    LTEXT           "6",IDC_STATIC7,110,132,57,8
+    LTEXT           "종속변수:",IDC_STATIC,39,148,54,8
+    LTEXT           "7",IDC_STATIC8,109,148,57,8
+    LTEXT           "은닉층 개수: ",IDC_STATIC,39,84,54,8
+    LTEXT           "9",IDC_STATIC9,110,84,57,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "Wizard"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Wizard.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "Wizard.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_TAB1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_TAB2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG4 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG5 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Wizard\n\nWizard\n\n\nWizard.Document\nWizard.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Wizard"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "기존 문서를 엽니다.\n열기"
+    ID_FILE_CLOSE           "활성 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "활성 문서를 저장합니다.\n저장"
+    ID_FILE_SAVE_AS         "활성 문서를 새 이름으로 저장합니다.\n다른 이름으로 저장"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호 및 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모두 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 표시하거나 숨깁니다.\n도구 모음 설정/해제"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 숨깁니다.\n상태 표시줄 설정/해제"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#include "res\Wizard.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
